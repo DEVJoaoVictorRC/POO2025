@@ -1,0 +1,18 @@
+package exemplos;
+
+public class Exemplo2Switch {
+
+	public static void main(String[] args) {
+		String cidade = "Petrópolis";
+		
+		String reusltado = switch (cidade) {
+		case "Petrópolis","Teresópolis", "Areal" -> "Rio de Janeiro";
+		case "Juiz de Fora","Mar de Espanha", "Rio Pomba" -> "Minas Gerais";
+		default -> "Outro Estado";
+		};
+		System.out.println(reusltado);
+		
+		
+	}
+
+}

@@ -24,7 +24,12 @@ public class Pessoa {
 
 
 	public void setPeso(double peso) {
-		this.peso = peso;
+		if (peso <= 0) {
+			System.out.println("Peso inválido");
+		} else {
+			this.peso = peso;
+		}
+		
 	}
 
 
